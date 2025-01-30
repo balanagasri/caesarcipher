@@ -1,0 +1,95 @@
+body {
+  background: url("/static/image3.png");
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 20px 0;
+}
+
+.code {
+  color: green;  /* CODE in green color */
+}
+
+.world {
+  font-family: 'lucida handwriting', monospace;  /* WORLD in a different font */
+  color: white;  /* Optional: color for WORLD */
+  display: block; /* Make WORLD appear on a new line */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center; /* Center form elements horizontally */
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;  /* Space between label and input */
+}
+
+label {
+  font-weight: bold;
+  text-align: right; /* Align label to the right */
+  width: 200px; /* Set a fixed width for the label */
+  color: green; /* Set label text color to green */
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 300px; /* Width of the input box */
+}
+
+button {
+  padding: 10px;
+  background-color: #00c853;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 200px;  /* Optional: same width for button as input */
+  margin-top: 20px;  /* Add margin to separate button from form */
+}
+
+button:hover {
+  background-color: #009624;
+}
+
+.result {
+  margin-top: 20px;
+}
+footer {
+  background-color: #5ae4cb;
+  color: rgb(25, 23, 23);
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  width: 105%;
+  bottom: 0;
+}
+
+footer a {
+  color: #1f2021;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
