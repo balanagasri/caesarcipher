@@ -22,10 +22,15 @@ def index():
     if request.method == "POST":
         mode = request.form.get("mode")
         text = request.form.get("text")
-        shift = int(request.form.get("shift", 0))
+        shift = request.form.get("shift", "0")
 
-        if mode in ['E','e','d', 'D']:
-            result = caesar_cipher(text, shift, mode)
+        try:
+            shift = int(shift)
+        except ValueError:
+            shift = 0  # Default to 0 if shift is not a valid integer
+
+        if mode in ['E', 'e', 'D', 'd']:  # Case-insensitive check
+            result = caesar_cipher(text, shift, mode.upper())  # Always use upper for consistency
 
     return render_template("index.html", result=result)
 
